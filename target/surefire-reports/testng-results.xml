@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="60" started-at="2015-08-17T11:59:53Z" finished-at="2015-08-17T11:59:53Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="60" started-at="2015-08-17T11:59:53Z" finished-at="2015-08-17T11:59:53Z">
+      <class name="com.mefozzy.calculatortest.TestBaseNGTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.mefozzy.calculatortest.TestBaseNGTest@e068ad3]" name="setUpClass" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:com.mefozzy.calculatortest.TestBaseNGTest@e068ad3]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="testTearDown()[pri:0, instance:com.mefozzy.calculatortest.TestBaseNGTest@e068ad3]" name="testTearDown" duration-ms="20" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTearDown -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.mefozzy.calculatortest.TestBaseNGTest@e068ad3]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.mefozzy.calculatortest.TestBaseNGTest@e068ad3]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.mefozzy.calculatortest.TestBaseNGTest -->
+      <class name="com.mefozzy.calculatortest.BaseTestCaseNGTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.mefozzy.calculatortest.BaseTestCaseNGTest@4de1c034]" name="setUpClass" is-config="true" duration-ms="20" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.mefozzy.calculatortest.BaseTestCaseNGTest@4de1c034]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="testSomeMethod()[pri:0, instance:com.mefozzy.calculatortest.BaseTestCaseNGTest@4de1c034]" name="testSomeMethod" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSomeMethod -->
+        <test-method status="PASS" signature="setUpMethod()[pri:0, instance:com.mefozzy.calculatortest.BaseTestCaseNGTest@4de1c034]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mefozzy.calculatortest.BaseTestCaseNGTest@4de1c034]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-08-17T14:59:53Z" finished-at="2015-08-17T14:59:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mefozzy.calculatortest.BaseTestCaseNGTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

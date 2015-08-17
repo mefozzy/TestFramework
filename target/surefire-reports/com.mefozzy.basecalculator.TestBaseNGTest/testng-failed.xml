@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.mefozzy.basecalculator.TestBaseNGTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.mefozzy.basecalculator.TestBaseNGTest">
+        <methods>
+          <include name="testTearDown"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.mefozzy.basecalculator.TestBaseNGTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.mefozzy.basecalculator.TestBaseNGTest] -->

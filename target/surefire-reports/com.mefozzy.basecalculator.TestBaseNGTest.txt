@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.mefozzy.basecalculator.TestBaseNGTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.212 sec <<< FAILURE!
+testTearDown(com.mefozzy.basecalculator.TestBaseNGTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+java.lang.AssertionError: Этот тест является прототипом.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.mefozzy.basecalculator.TestBaseNGTest.testTearDown(TestBaseNGTest.java:49)
