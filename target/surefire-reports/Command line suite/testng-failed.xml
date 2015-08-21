@@ -6,20 +6,16 @@
       <class name="com.mefozzy.calculatortest.BaseTestCaseNGTest">
         <methods>
           <include name="tearDown"/>
-          <include name="tearDownMethod"/>
-          <include name="setUpMethod"/>
-          <include name="setUpClass"/>
+          <include name="StartUp"/>
+          <include name="tesrDown"/>
         </methods>
       </class> <!-- com.mefozzy.calculatortest.BaseTestCaseNGTest -->
-      <class name="com.mefozzy.calculatortest.TestBaseNGTest">
+      <class name="com.mefozzy.projectcalculator.CalculatorNGTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="testTearDown"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownClass"/>
+          <include name="testIE"/>
           <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- com.mefozzy.calculatortest.TestBaseNGTest -->
+      </class> <!-- com.mefozzy.projectcalculator.CalculatorNGTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

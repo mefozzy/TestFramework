@@ -1,51 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mefozzy.calculatortest;
 
-import static org.testng.Assert.*;
-import org.testng.annotations.AfterClass;
+import static com.mefozzy.projectcalculator.AbstractPage.getDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
- *
- * @author admin
+ * @author Alex Ilnitsky
  */
-public class BaseTestCaseNGTest extends BaseTestCase{
-    String URL = "http:/darom.kharkov.ua/calculator.php";
-    String inpRadioPlusLink = "input[ value='plus']";
-    String inpRadioMinusLink = "input[ value='minus']";
-    String inpRadioMultLink = "input[ value='mult']";
-    String inpRadioDivLink = "input[ value='division']";
-    String aLink = "input[name='a']";
-    String bLink = "input[name='b']";
-    String submitLink = "input[name='sub']";
-    String resultLink = "div [name='result']";   
-    
-    public BaseTestCaseNGTest() {
-    }
+public class BaseTestCaseNGTest extends BaseTestCase {
 
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
+    private static Logger log = LoggerFactory.getLogger(BaseTestCase.class);
 
-    @BeforeMethod
-    public void setUpMethod() throws Exception {
+    @Test
+    public void TC1() {
+        int TC = 0;
+        while (TestCases.length != iteration) {
+            Assert.assertEquals(homePage.operResult(TestCases[iteration++].toString().trim()
+                    , TestCases[iteration++].toString().trim()
+                    , TestCases[iteration++].toString().trim())
+                    , TestCases[iteration++].toString().trim());
+            log.info("Test#" + ++TC + " PASS");
+        }
     }
 
     @AfterMethod
-    public void tearDownMethod() throws Exception {
+    public void tesrDown() {
+        if (getDriver() != null) {
+            getDriver().close();
+            getDriver().quit();
+        }
     }
-
-    @Test
-    public void testSomeMethod() {
-        // Просмотр списка задач TODO для сгенерированного кода теста и удаление вызова по умолчанию для случаев сбоя.
-        //fail("\u042d\u0442\u043e\u0442 \u0442\u0435\u0441\u0442 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u043e\u0442\u043e\u0442\u0438\u043f\u043e\u043c.");
-    }
-    
 }

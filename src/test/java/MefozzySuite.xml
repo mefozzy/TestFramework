@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="com.mefozzy_TestFramework_jar_1.0-SNAPSHOT">
+
+    <test name="Smoke Test">
+        <classes>
+            <class name="com.mefozzy.projectcalculator.CalculatorNGTest"/>
+        </classes>
+    </test>
+    <test name="Functional Test">
+        <classes>
+            <class name="com.mefozzy.calculatortest.BaseTestCaseNGTest" />
+        </classes>
+    </test>
+
+</suite>

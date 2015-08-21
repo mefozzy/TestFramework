@@ -1,24 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mefozzy.calculatortest;
 
 import static com.mefozzy.calculatortest.TestBase.Browser.*;
-import static com.mefozzy.calculatortest.TestBase.Browser.webDriver;
-import org.openqa.selenium.WebDriver;
+import com.mefozzy.projectcalculator.Calculator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.BeforeClass;
 
-/**
- *
- * @author admin
- * Это клас с которого начинается выполнение всех тестов
- * Здесь целесообразно разместить  @BeforeClass/@BeforeMethod
- * Здесь же фабрика (под аннотацией ) в которую передаются названия классов, 
- * содержащих объекты страниц PageFactory.initElements (getDriver(), Calculator.class)
- */
+/* @author Alex Ilnitsky  */
 public class BaseTestCase extends TestBase {
 
-    public void PageFactory (WebDriver webDriver, Object classPage){
+    //init Browser
+
+    String bin = "C:\\Program Files (x86)\\Firefox\\firefox.exe";
+    String URL = "http:/darom.kharkov.ua/calculator.php";
+    Calculator homePage = new Calculator(webDriverWithPath(FIREFOX, bin));
+    //init auxiliary variables
+    private static Logger log = LoggerFactory.getLogger(BaseTestCase.class);
+    static Object[] TestCases;
+    int iteration = 0;
+
+    @BeforeClass
+    public void StartUp() throws Exception {
+
+        //init Test Case values
+        WorkWithDBF wDBF = new WorkWithDBF("TestCases.dbf");
+        wDBF.DBFread();
+        TestCases = wDBF.Cases.toArray();
+        //open browser
+        homePage.setUrl(URL);
+
     }
+
 }
