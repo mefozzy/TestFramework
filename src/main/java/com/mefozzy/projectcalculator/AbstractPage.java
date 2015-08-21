@@ -1,28 +1,34 @@
 package com.mefozzy.projectcalculator;
 
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-/* *@author Alex ilnitsky
-   * Определение методов и полей, которые будут общими для всех объектов 
-страниц (поэтому называется абстрактным, т.к. подходит для всех объектов 
-страниц)
-   * Здесь будет конструктор, устанавливающий экземпляр веб-драйвера, 
-переданный из теста и дополнительный выбор экземпляра веб-драйвера (getDriver())
-*/
+/* @author Alex Ilnitsky */
 public abstract class AbstractPage {
 
     AbstractPage(WebDriver driver){
     this.driver =  driver;
     }
     
-    final WebDriver driver;
+    private static WebDriver driver;
     private String URL;
+    private static Logger log = LoggerFactory.getLogger(AbstractPage.class);
    
+    public static WebDriver getDriver(){
+    return AbstractPage.driver ;
+    }
+    
     public void setUrl(String URL) {
         this.URL = URL;
+        log.info("Open URL : " + URL);
+        this.driver.get(URL);
+        log.info("Page opened");
     }
-
+    
     public String getURL() {
         return this.URL;
     }
+    
+    
 }
