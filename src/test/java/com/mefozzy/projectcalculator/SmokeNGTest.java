@@ -19,7 +19,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /* @author Alex Ilnitsky */
-public class CalculatorNGTest {
+
+public class SmokeNGTest {
 
     private static Logger log = LoggerFactory.getLogger(BaseTestCase.class);
     String URL = "http://darom.kharkov.ua/calculator.php";
